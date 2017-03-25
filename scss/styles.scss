@@ -841,28 +841,6 @@ footer {
 // Medium Devices
 @media only screen and (max-width : 992px) {
 
-    #lead {
-        height: auto;
-        min-height: auto;
-        max-height: auto;
-        padding: 100px 15px;
-    }
-
-    #lead-content {
-        position: relative;
-        transform: none;
-        left: auto;
-        top: auto;
-
-        /*h1 {
-            font-size: 3em;
-        }
-
-        h2 {
-            font-size: 1.75em;
-        }*/
-    }
-
     #about {
         text-align: center;
 
@@ -903,13 +881,6 @@ footer {
     }
 
     #lead-content {
-        /*h1 {
-            font-size: 2em;
-        }
-
-        h2 {
-            font-size: 1.3em;
-        }*/
 
         a {
             padding: 10px 20px;
