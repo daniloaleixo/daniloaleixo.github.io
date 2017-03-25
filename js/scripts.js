@@ -124,7 +124,9 @@
             newContactRef.set(newContact);
             $('#contactMessage').val("");
             $('#contactEmail').val("");
-            $('#saveForm').html("<i class='fa fa-paper-plane' aria-hidden='true'>Sucessfully sent</i>");
+
+            $('#saveForm')
+            .html("<i class='fa fa-paper-plane animated fadeIn' aria-hidden='true'> <span style='font-weight: 700;'>Sucessfully sent</span></i>");
 
         }, function(error){
             alert("Error");
