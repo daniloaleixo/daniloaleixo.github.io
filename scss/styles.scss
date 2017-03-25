@@ -723,6 +723,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    border-bottom: 1px solid $border;
 
     h2 {
         color: $heading;
@@ -750,7 +751,119 @@ footer {
 
 /*
     -------------------------------
-    ----- 10. Contact Styles -----
+    ----- 10. Languages Styles -----
+    -------------------------------
+*/
+#languages {
+    padding: 50px 15px 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.language-skill {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	h3 {
+        font-weight: 500;
+        float: left;
+        margin: 0;
+        color: $heading;
+    }
+
+    h4 {
+        color: $text;
+        clear: both;
+        font-weight: 500;
+        margin: 0 0 15px 0;
+    }
+}
+
+.evenly-dist-col {
+	display: flex;
+	justify-content: space-around;
+	margin: 0px auto 0px auto ;
+}
+
+.outer-circle {
+	background-color: transparent;
+	width: 12em;
+	height: 12em;
+	border-radius: 100%;
+	opacity: 50%
+}
+
+
+.inner-circle {
+	background-color: transparent;
+	position: relative;
+	width: 12em;
+	height: 12em;
+	border-radius: 100%;
+	margin-top: -3px;
+	margin-left: -3px;
+}
+
+.inner-inner-circle {
+	background-color: transparent;
+	position: relative;
+	width: 12em;
+	height: 12em;
+	border-radius: 100%;
+	border: 2px solid $medium_dark_orange;
+	margin-top: -6px;
+	margin-left: -6px;
+	text-align: center;
+}
+
+.quarter {
+  	position: absolute;
+  	width: 50%;
+  	height: 50%;
+  	background-color: $medium_dark_orange;
+}
+.quarter1 {
+  	top: 0;
+  	left: 0;
+  	border-radius: 100% 0 0 0;
+}
+.quarter2 {
+  	top: 0;
+  	right: 0;
+  	border-radius: 0 100% 0 0;
+}
+.quarter3 {
+  	bottom: 0;
+  	left: 0;
+  	border-radius: 0 0 0 100%;
+}
+.quarter4 {
+  	bottom: 0;
+  	right: 0;
+  	border-radius: 0 0 100% 0;
+}
+.cutout {
+  	width: 94%;
+  	height: 94%;
+  	background-color: white;
+  	position: absolute;
+  	top: 3%;
+  	left: 3%;
+  	border-radius: 50%;
+  	pointer-events: none;
+}
+
+
+/*
+    -------------------------------
+    ----- 11. Contact Styles -----
     -------------------------------
 */
 
@@ -819,7 +932,7 @@ footer {
 
 /*
     ----------------------------
-    ----- 11. Media Queries -----
+    ----- 12. Media Queries -----
     ----------------------------
 */
 
@@ -955,3 +1068,5 @@ footer {
     }
 
 }
+
+
