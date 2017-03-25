@@ -33,7 +33,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #ff5526;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -756,7 +756,11 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: $base-color;
+    background: $medium_orange; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, $purple , $medium_orange); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, $purple, $medium_orange); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, $purple, $medium_orange); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, $purple , $medium_orange); /* Standard syntax */
     text-align: center;
 
     h2 {
@@ -777,7 +781,7 @@ footer {
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: darken($base-color, 15%);
+        background: lighten($base-color, 15%);
         color: #fff;
         @include transition();
         @include placeholder {
