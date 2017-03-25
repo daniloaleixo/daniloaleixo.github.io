@@ -3,8 +3,8 @@
     Version: 1.1.2
     Last Change: 03/21/17
     Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
+    Repo: https://github.com/RyanFitzgerald/devportfolio-template 
+    Issues: https:/*github.com/RyanFitzgerald/devportfolio-template/issues 
 
     Description: This file contains all the styles associated with the page
     that don't come from third party libraries. This file gets compiled using
@@ -32,19 +32,19 @@
     ------------------------
 */
 
-// Define base and accent colors
+/* Define base and accent colors */
 $base-color: #ff5526;
 $base-color-hover: darken($base-color, 10%);
 
-// Define background colors
+/* Define background colors */
 $background: #fff;
 $background-alt: #f2f2f5;
 
-// Define border colors
+/* Define border colors */
 $border: #dcd9d9;
 
-// Define text colors
-$heading: #374054;
+/* Define text colors */
+$heading: #543745;
 $text: #74808a;
 
 /* Palette colors */
@@ -112,7 +112,7 @@ a {
 	color:$medium_dark_orange;
 }
 
-// No JS styles
+/* No JS styles */
 .no-js {
     #experience-timeline {
         > div {
@@ -823,7 +823,7 @@ footer {
     ----------------------------
 */
 
-// Collapse timeline
+/* Collapse timeline */
 @media only screen and (max-width: 750px) {
 
     #experience-timeline {
@@ -852,7 +852,7 @@ footer {
 
 }
 
-// Medium Devices
+/* Medium Devices */
 @media only screen and (max-width : 992px) {
 
     #about {
@@ -865,7 +865,7 @@ footer {
 
 }
 
-// Small Devices
+/* Small Devices */
 @media only screen and (max-width : 768px) {
 
     header {
@@ -932,7 +932,7 @@ footer {
 
 }
 
-// Extra Small Devices
+/* Extra Small Devices */
 @media only screen and (max-width : 480px) {
 
     #lead-content {
