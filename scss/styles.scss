@@ -34,11 +34,11 @@
 
 // Define base and accent colors
 $base-color: #3498db;
-$base-color-hover: darken($base-color, 10%);
+$base-color-hover: #ffde4d;
 
 // Define background colors
 $background: #fff;
-$background-alt: #f2f2f5;
+$background-alt: #ffea4d;
 
 // Define border colors
 $border: #dcd9d9;
@@ -48,6 +48,7 @@ $heading: #374054;
 $text: #74808a;
 
 /* Palette colors */
+$yellow_accent: #ffea4d;
 $very_light_orange: #ffab91;
 $medium_orange: #ff5526;
 $medium_dark_orange: #e64919;
@@ -181,13 +182,13 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        color: #fff;
         padding: 10px;
 
         &:hover {
             color: $base-color-hover;
             text-decoration: none;
-            background: #eee;
+            /*background: #eee;*/
             border-radius: 4px;
         }
 
