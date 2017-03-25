@@ -101,7 +101,6 @@
         ref.once('value').then(function(snapshot){
             console.log(snapshot.val());
             //when the data updates at firebase, put it in the data variable
-            data = snapshot.val();
 
             var $form = $(this);
 
@@ -110,22 +109,23 @@
 
             //get values to send to Firebase
             var emailToSend = $('#contactEmail').val();
-            console.log(emailToSend);
             
             var messageToSend = $('#contactMessage').val();
-            console.log(messageToSend);
 
             var newContact = {
                 email: emailToSend,
                 message: messageToSend
             };
 
+            //send the new data to Firebase
             var newContactRef = ref.push();
             console.log(newContactRef);
 
-            //send the new data to Firebase
             newContactRef.set(newContact);
-            
+            $('#contactMessage').val("");
+            $('#contactEmail').val("");
+            $('#saveForm').html("<i class='fa fa-paper-plane' aria-hidden='true'>Sucessfully sent</i>");
+
         }, function(error){
             alert("Error");
         })
