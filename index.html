@@ -282,11 +282,10 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
+            <form action="" id="newContact">
+                <input id="contactEmail" type="email" name="_replyto" placeholder="Your email" required>
+                <textarea id="contactMessage" name="message" placeholder="Your message" required></textarea>
+                <button id="saveForm" name="saveForm" type="submit">Send</button>
             </form>
         </div>
         <!-- End #contact-form -->
@@ -328,6 +327,18 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDUJ7vUgRENKWdcAau9qXRdNSyAXf1g2uM",
+        authDomain: "personalwebsite-c45f7.firebaseapp.com",
+        databaseURL: "https://personalwebsite-c45f7.firebaseio.com",
+        storageBucket: "personalwebsite-c45f7.appspot.com",
+        messagingSenderId: "513824594597"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="js/scripts.min.js"></script>
 </body>
 

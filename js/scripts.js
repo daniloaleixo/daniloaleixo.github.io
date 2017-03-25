@@ -86,4 +86,53 @@
         $('header, body').removeClass('active');
     });
 
+
+
+    $("#newContact").submit(function(event){
+
+        //make a variable to keep track of data coming from firebase
+        var data = [];
+          
+        //create new connection to firebase
+        var ref = firebase.database().ref().child('emails');
+          
+
+        //get snapshot
+        ref.once('value').then(function(snapshot){
+            console.log(snapshot.val());
+            //when the data updates at firebase, put it in the data variable
+            data = snapshot.val();
+
+            var $form = $(this);
+
+            //disable submit button
+            $form.find("#saveForm").prop('disabled', true);
+
+            //get values to send to Firebase
+            var emailToSend = $('#contactEmail').val();
+            console.log(emailToSend);
+            
+            var messageToSend = $('#contactMessage').val();
+            console.log(messageToSend);
+
+            var newContact = {
+                email: emailToSend,
+                message: messageToSend
+            };
+
+            var newContactRef = ref.push();
+            console.log(newContactRef);
+
+            //send the new data to Firebase
+            newContactRef.set(newContact);
+            
+        }, function(error){
+            alert("Error");
+        })
+
+        
+
+        return false;
+    })
+
 })(jQuery);
