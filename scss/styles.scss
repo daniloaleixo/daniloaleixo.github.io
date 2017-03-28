@@ -992,6 +992,47 @@ footer {
     }
 }
 
+/*
+    ----------------------------
+    ----- 12. Hobbies -----
+    ----------------------------
+*/
+
+#hobbies {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid $border;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: #373737;
+    }
+
+    .hobbies-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+    .hobbie {
+        text-align: center; 
+        padding: 15px;
+
+        .hobbie-icon {
+            height: 50px;
+            width:50px;
+            opacity: 0.7;
+        }
+    }
+
+
+}
+
 
 /*
     ----------------------------
@@ -1159,6 +1200,14 @@ footer {
     	margin: 30px auto 0 auto;
     }
 
+    #hobbies {
+        .hobbie {
+            .hobbie-icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }
 
 
