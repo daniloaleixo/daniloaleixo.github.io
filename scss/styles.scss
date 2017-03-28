@@ -933,6 +933,58 @@ footer {
 
 /*
     ----------------------------
+    ----- 12. Awards -----
+    ----------------------------
+*/
+#awards {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.award {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.award-icon {
+    color: $medium_dark_orange;
+    margin: 0 1em 0 1em;
+}
+
+.award-info {
+    text-align: left;
+
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+}
+
+
+/*
+    ----------------------------
     ----- 12. Media Queries -----
     ----------------------------
 */
