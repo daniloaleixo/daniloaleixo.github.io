@@ -952,26 +952,36 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
-    border-radius: 4px;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    
 }
 
 .award-icon {
     color: $medium_dark_orange;
-    margin: 0 1em 0 1em;
+    margin-right:1em;
 }
 
 .award-info {
     text-align: left;
+    padding: 15px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid $border;
 
 
     h3 {
         font-size: 1.5em;
         font-weight: 300;
         color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #7e8890;
         margin: 0 0 15px 0;
     }
 
