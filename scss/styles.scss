@@ -324,8 +324,8 @@ footer {
     @include transition();
 
     &:hover {
-        color: $medium_orange;
-        background: #fff;
+        color: #fff;
+        background: rgba(255,255,255,0.3);
         text-decoration: none;
     }
 }
