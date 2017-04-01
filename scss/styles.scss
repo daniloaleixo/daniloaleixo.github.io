@@ -48,6 +48,7 @@ $heading: rgba(55,55,55,1);
 $text: #74808a;
 
 /* Palette colors */
+$yellow_gradient: #FF530D;
 $yellow_accent: #ffea4d;
 $very_light_orange: #ffab91;
 $medium_orange: #ff5526;
@@ -207,10 +208,10 @@ header {
     &.active {
         display: block;
         background: $medium_orange; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(right, $purple , $medium_orange); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(left, $purple, $medium_orange); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(left, $purple, $medium_orange); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to left, $purple , $medium_orange); /* Standard syntax */
+        background: -webkit-linear-gradient(right, $purple , $yellow_gradient); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(left, $purple, $yellow_gradient); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(left, $purple, $yellow_gradient); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to left, $purple , $yellow_gradient); /* Standard syntax */
     }
 }
 
@@ -377,10 +378,10 @@ footer {
     /*background: -moz-linear-gradient(bottom left, $purple, $medium_orange); /* For Firefox 3.6 to 15 */
     /*background: linear-gradient(to bottom left, $purple, $medium_orange); /* Standard syntax */
     background: $medium_orange; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, $purple , $medium_orange); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, $purple, $medium_orange); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, $purple, $medium_orange); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left, $purple , $medium_orange); /* Standard syntax */
+    background: -webkit-linear-gradient(right, $purple , $yellow_gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, $purple, $yellow_gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, $purple, $yellow_gradient); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, $purple , $yellow_gradient); /* Standard syntax */
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -871,10 +872,10 @@ footer {
 #contact {
     padding: 50px 15px;
     background: $medium_orange; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, $purple , $medium_orange); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, $purple, $medium_orange); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, $purple, $medium_orange); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left, $purple , $medium_orange); /* Standard syntax */
+    background: -webkit-linear-gradient(right, $purple , $yellow_gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, $purple, $yellow_gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, $purple, $yellow_gradient); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, $purple , $yellow_gradient); /* Standard syntax */
     text-align: center;
 
     h2 {
