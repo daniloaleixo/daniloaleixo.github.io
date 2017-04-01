@@ -46,6 +46,7 @@ $border: #dcd9d9;
 /* Define text colors */
 $heading: rgba(55,55,55,1);
 $text: #74808a;
+$heading_grey: #d2d2d2;
 
 /* Palette colors */
 $yellow_gradient: #FF530D;
@@ -409,14 +410,14 @@ footer {
     }
 
     h2 {
-        color: darken(#fff, 25%);
+        color: $heading_grey;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 4.42em;
     }
 
     h3 {
-        color: darken(#fff, 25%);
+        color: $heading_grey;
         font-weight: 300;
         font-size: 2.7em;
         margin-bottom: 1em;
