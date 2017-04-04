@@ -490,6 +490,27 @@ footer {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
 
+    .heading-row {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .circle-wrapper {
+        width: 60%;
+        border-radius: 100%;
+        border: 2px solid $medium_dark_orange;
+        margin: auto;    
+    }
+
+    .profile-img {
+        width: 100%;
+    }
+
+    .flex-centralize-vertical{
+        display: flex;
+        align-items: center;
+    }
+
     h2 {
         color: $heading;
     }
@@ -1073,14 +1094,6 @@ footer {
 /* Medium Devices */
 @media only screen and (max-width : 992px) {
 
-    #about {
-        text-align: center;
-
-        p {
-            text-align: left;
-        }
-    }
-
     .evenly-dist-col {
     	display: flex;
     	justify-content: center;
@@ -1089,6 +1102,12 @@ footer {
 
     .inner-circle {
     	margin: 0 30px 0 30px;
+    }
+
+    #about {
+        .circle-wrapper {
+            display: none;
+        }
     }
 
 }
