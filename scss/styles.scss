@@ -506,6 +506,10 @@ footer {
         width: 100%;
     }
 
+    .small-text {
+        display: none;
+    }
+
     .flex-centralize-vertical{
         display: flex;
         align-items: center;
@@ -1218,6 +1222,16 @@ footer {
 
     .inner-circle {
     	margin: 30px auto 0 auto;
+    }
+
+    #about {
+        .small-text {
+            display: block;
+        }
+
+        .large-text {
+            display: none;
+        }
     }
 
     #hobbies {
