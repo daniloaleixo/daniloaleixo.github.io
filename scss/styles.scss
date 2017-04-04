@@ -362,6 +362,10 @@ footer {
     background: $background-alt;
 }
 
+.small-text {
+    display: none;
+}
+
 /*
     --------------------------
     ----- 4. Lead Styles -----
@@ -504,10 +508,6 @@ footer {
 
     .profile-img {
         width: 100%;
-    }
-
-    .small-text {
-        display: none;
     }
 
     .flex-centralize-vertical{
@@ -1224,14 +1224,13 @@ footer {
     	margin: 30px auto 0 auto;
     }
 
-    #about {
-        .small-text {
-            display: block;
-        }
+    /* Smaller text for smaller screens */
+    .small-text {
+        display: block;
+    }
 
-        .large-text {
-            display: none;
-        }
+    .large-text {
+        display: none;
     }
 
     #hobbies {
