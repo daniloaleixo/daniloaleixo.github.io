@@ -1167,15 +1167,17 @@ footer {
         }
     }
 
+    .project {
+        flex-direction: column;
+    }
+
     .project-image {
-        display: none;
+        max-height: 200px;
     }
 
     .project-info {
-        position: relative;
-        margin: 0;
-        top: auto;
-        transform: none;
+        width: 100%;
+        background-color: white;
     }
 
     footer {
