@@ -708,23 +708,23 @@ footer {
 }
 
 .project {
-    position: relative;
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-image {
     float: left;
+    height: 400px;
+    width: 400px;
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
     padding: 15px;
 
     h3 {
@@ -738,6 +738,11 @@ footer {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+    }
+
+    .hashtags {
+        font-size: 0.8em;
+        color: #aaa;
     }
 }
 
@@ -879,7 +884,7 @@ footer {
 .cutout {
   	width: 94%;
   	height: 94%;
-  	background-color: white;
+  	background-color: $background-alt;
   	position: absolute;
   	top: 3%;
   	left: 3%;
