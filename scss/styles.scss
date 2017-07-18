@@ -716,6 +716,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+        margin-bottom: 10px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 7px;
+        padding: 5px 10px;
+        color: $heading;
+        list-style: none;
+        cursor: default;
+        background-color: #eeeeee;
+        font-size: 0.8em;
+    }
 }
 
 .project-image {
