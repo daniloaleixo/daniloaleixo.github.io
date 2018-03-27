@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
+    <!-- Metadata -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +24,12 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Fullpage -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js" ></script> 
+
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-icon-57x57.png">
@@ -58,577 +65,112 @@
       ga('send', 'pageview');
 
     </script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+    </script>
+    	<style>
+
+                /* Sections
+                 * --------------------------------------- */
+                #section0 img,
+                #section1 img{
+                    margin: 20px 0 0 0;
+                }
+                #section2 img{
+                    margin: 20px 0 0 52px;
+                }
+                #section3 img{
+                    bottom: 0px;
+                    position: absolute;
+                    margin-left: -420px;
+                }
+                .intro p{
+                    width: 50%;
+                    margin: 0 auto;
+                    font-size: 1.5em;
+                }
+                .twitter-share-button{
+                    position: absolute;
+                    z-index: 99;
+                    right: 149px;
+                    top: 9px;
+                }
+        
+            </style>
     <title>Danilo Aleixo</title>
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="animated fadeInDown">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
+    <ul id="menu" style="position: absolute">
+        <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+        <li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+    </ul>
+    
+    
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h1>fullPage.js</h1>
+                <input type="hidden" name="id" value="1" />
+            <p>Create Beautiful Fullscreen Scrolling Websites</p>
+            <img src="imgs/fullPage.png" alt="fullPage" />
         </div>
-        <ul id="menu">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#awards">Awards</a>
-            </li>
-            <li>
-                <a href="#languages">Languages</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#hobbies">Hobbies</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content" class="animated fadeIn">
-            <h1>Hello</h1>
-            <h2>I'm Danilo</h2>
-            <h3>I'm a web developer </h3>
-            <a href="assets/Resume.pdf" 
-                class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down" class="animated fadeInUp">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 heading-row">
-                    <h2 class="heading">About Me</h2>
+        <div class="section" id="section1">
+            <div class="slide">
+                <div class="intro">
+                    <h1>Create Sliders</h1>
+                    <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+                    <img src="imgs/slider.png" alt="slider" />
+                </div>
+    
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img src="imgs/1.png" alt="simple" />
+                    <h1>Simple</h1>
+                    <p>Easy to use. Configurable and customizable.</p>
                 </div>
             </div>
-            <div class="row flex-centralize-vertical">
-            	<div class="col-md-1">
-    </div>
-                <div class="col-md-3">
-                    <div class="circle-wrapper">
-                        <img src="assets/profile.png" alt="profile picture" 
-                        responsive class="profile-img">
-                    </div>
+            <div class="slide">
+                <div class="intro">
+                    <img src="imgs/2.png" alt="Cool" />
+                    <h1>Cool</h1>
+                    <p>It just looks cool. Impress everybody with a simple and modern web design!</p>
                 </div>
-                <div class="col-md-9 col-xs-12">
-                    <p class="large-text">
-                        I'm Danilo Aleixo, I am a very affable person who loves to work with people and improve the relationship between the coworkers and between the client and the product.
-                        <br>
-                        I'm currently working as a Software Architect at Learn To Fly developing the client and server application using Node, React and Amazon Web Services as our host, assuring a clear focus on a scalable and customer-friendly application.
-                        <br>
-                        I graduated in computer science at University of São Paulo, during my time there, I developed a scientific initiation in software engineer and had the oportunity to be an Agile coach for a university system build in Rails.
-                        <br>
-                        I consider myself a philomath and just love to learn new things, currently learning french and how to play the piano.
-                    </p>
-                    <p class="small-text">
-                        I'm Danilo Aleixo, I am a very affable person who loves to work with people and improve the relationship between the coworkers and between the client and the product.
-                        <br>
-                        I'm currently working as a Software Architect at Learn To Fly developing the client and server application using Node, React and Amazon Web Services as our host, assuring a clear focus on a scalable and customer-friendly application.
-                        <br>
-                        I consider myself a philomath and just love to learn new things, currently learning french and how to play the piano.
-                    </p>
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img src="imgs/3.png" alt="Compatible" />
+                    <h1>Compatible</h1>
+                    <p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <!-- LTF -->
-            <div data-date="February 2018 – Present">
-                <h3>Learn To Fly</h3>
-                <h4>Software Architect</h4>
-                <p class="large-text">
-                    I'm currently working as a Software Architect developing the client and server application using Node, React and Amazon Web Services as our host, assuring a clear focus on a scalable and customer-friendly application.
-                </p>
-                <p class="small-text">
-                    I'm currently working as a Software Architect developing the client and server application using Node, React and Amazon Web Services as our host, assuring a clear focus on a scalable and customer-friendly application.
-                </p>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Example</h1>
+                <p>HTML markup example to define 4 sections.</p>
+                <img src="imgs/example2.png" alt="example" />
             </div>
-
-            <!-- Colmeia -->
-            <div data-date="April 2017 – February 2018">
-                <h3>Colmeia</h3>
-                <h4>Tech Lead / Full-Stack Developer</h4>
-                <p class="large-text">
-                    I've managed a small team of developers and designers, together we delivered the whole client app. The application was developed with Angular, using Typescript and Sass. I also helped architecture and develop the backend application which works with NodeJS using MySQL, Redis, SocketIO and RabbitMQ in the stack along with Google Cloud Platform products.
-                    <br>
-                    Duties:
-                    <br>
-                    - Architecture a fully scalable client application, using design patterns and object oriented approaches.
-                    <br>
-                    - Help architecture a backend application based in scalable growth and perfomance, using caches and relational database.
-                </p>
-                <p class="small-text">
-                    I've managed a small team of developers and designers, together we delivered the whole client app. The application was developed with Angular, using Typescript and Sass. I also helped architecture and develop the backend application which works with NodeJS using MySQL, Redis, SocketIO and RabbitMQ in the stack along with Google Cloud Platform products.
-                </p>
-            </div>
-
-            <!-- ITAU -->
-            <div data-date="August 2014 – August 2016">
-                <h3>Itaú BBA</h3>
-                <h4>Intern</h4>
-                <p class="large-text">
-                    I worked in Itau's IT area performing at the systems department for investment bank Itau BBA, specifically working in business analysis and agile project management for some of bank's foreign units as New York, Nassau/Cayman and London.<br>
-                    Duties:<br>
-                    - Acting at the project's functional definition, creating screen prototypes, gathering requirements along with business areas and elaborating requirement documents<br>
-                    - Elaborating status and management of incidents reports <br>
-                    - Executing functional tests<br>
-                    - Supporting business areas during project homologation
-                </p>
-                <p class="small-text">
-                        I worked in Itau's IT area performing at the systems department for investment bank Itau BBA, specifically working in business analysis and agile project management for bank's foreign units as New York, Nassau/Cayman and London.
-                    </p>
-            </div>
-
         </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of São Paulo</h3>
-            <span class="education-date">Jan 2012 - Dec 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Involved in a Scientific Initiation scholar of CNPq during one year that leads to the publication of the research "Event Simulator for Spacial Systems"
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>SENAC</h3>
-            <span class="education-date">Apr 2011 - Oct 2011</span>
-            <h4>Graphic Design Course</h4>
+        <div class="section" id="section3">
+            <div class="intro">
+                <h1>Working On Tablets</h1>
                 <p>
-                Graphic design course covering design theories and patterns, as well as softwares as Photoshop, InDesign and Illustrator
-            </p>
+                    Designed to fit to different screen sizes as well as tablet and mobile devices.
+                    <br /><br /><br /><br /><br /><br />
+                </p>
+            </div>
+            <img src="imgs/tablets.png" alt="tablets" />
         </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="assets/quero-dnheiros-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Quero Dinheiros</h3>
-                        <p class="small-text">
-                            Personal finance app, see your spedings and investments.
-                        </p>
-                        <p class="large-text">
-                            Personal finance app, see your spedings and investments.
-                            <br>
-                            The goal is to provide a simple app to manage your personal spendings and investments.
-                        </p>
-                        <ul>
-                            <li>Angular</li>
-                            <li>PWA</li>
-                            <li>Typescript</li>
-                        </ul>
-                        <a href="https://quero-dinheiros.firebaseapp.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="assets/finkids.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Financial Education App</h3>
-                        <p class="small-text">
-                            Help your kid learn how to save and manage money.
-                        </p>
-                        <p class="large-text">
-                            Help your kid learn how to save and manage money.
-                            Part of my undergraduate thesis where I study the best method to teach kids financial education.
-                        </p>
-                        <ul>
-                            <li>Angular</li>
-                            <li>Sass</li>
-                            <li>Firebase</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/financial-education-landing/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="assets/getup-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>I Dare You To Kill My App</h3>
-                        <p class="small-text">
-                            Kubernetes containers are really fast, but are you able to be faster?
-                        </p>
-                        <p class="large-text">
-                            Kubernetes containers are really fast, but are you able to be faster?
-                            <br>
-                            Little Project developed to generate leads to Getup Cloud company and in the future people who registrated in their plataform would receive this game as "loading screen". It was not published.
-                        </p>
-                        <ul>
-                            <li>React</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                        <a href="https://daretokill-79f8f.firebaseapp.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large" style="display: flex; justify-content: flex-start;">
-                    <div class="project-image">
-                        <img src="assets/calendar-component.png"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Calendar Component</h3>
-                        <p class="small-text">
-                            A contest to test Angular skills, the challenge here is to create a calendar.
-                        </p>
-                        <p class="large-text">
-                            A contest to test Angular skills, the challenge here is to create a calendar.
-                            The calendar show your actual events scheduled, let you schedule new events and provide a nice interface.
-                        </p>
-                        <ul>
-                            <li>Angular</li>
-                            <li>Sass</li>
-                            <li>Typecript</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/calendar-component/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-
-            <div class="row">
-                <div class="project shadow-large">
-                     <div class="project-image">
-                        <img src="assets/olha-por-onde-anda-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Olha por Onde Anda</h3>
-                        <p class="small-text">
-                            Can you tidy up the tiles at São Paulo?
-                        </p>
-                        <p class="large-text">
-                            Can you tidy up the tiles at São Paulo?
-                            <br>
-                            Game developed in HTML canvas to study its structure and to have a game with São Paulo theme
-                        </p>
-
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>Canvas</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/jogo_olhe_por_onde_anda/app/index.html">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-            </div>
-            
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="assets/bovespa-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Bovespa Stock Rating</h3>
-                        <p class="small-text">
-                            Fundamental analysis platform for BOVESPA stocks, generating a score for each share according to the selected criteria on the indicators.
-                        </p>
-                        <p class="large-text">
-                            Fundamental analysis platform for BOVESPA stocks, generating a score for each share according to the selected criteria on the indicators.
-                            <br>
-                            Project to help fundamental analysts choose the best stocks in São Paulo stock market, using fundamental principles described at Benjamin Graham's "Intelligent Investor"
-                        </p>
-
-                        <ul>
-                            <li>Jquery</li>
-                            <li>Django</li>
-                            <li>Python</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/bovespaStockRatings/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-            
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="awards">
-        <h2 class="heading">Awards</h2>
-        <div class="container">
-            <div class="row">
-                <div class="award">
-                    <i class="fa fa-trophy fa-4x award-icon" aria-hidden="true"></i>
-                    <div class="award-info">
-                        <h3><em>2nd place</em> - Itau Innovation Challenge</h3>
-                        <p>
-                            According to Itau, Innovation Challenge is a entrepreneurship and innovation competition, In which, groups are formed by members of different work areas in order to come up with ideias or solutions for the bank, chasing the "Best Innovation Project" award.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-     <div id="languages" class="background-alt">
-        <h2 class="heading">Languages</h2>
-        <div class="row evenly-dist-col">
-           <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter2"></div>
-                <div class="quarter quarter3"></div>
-                <div class="quarter quarter4"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>Portuguese</h3>
-                            <h4>Mother Language</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter2"></div>
-                <div class="quarter quarter3"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>English</h3>
-                            <h4>Advanced</h4>
-                        </div>
-                    </div>
-                </div>
-           </div>
-           <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter3"></div>
-                <div class="quarter quarter4"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>Spanish</h3>
-                            <h4>Advanced</h4>
-                        </div>
-                    </div>
-                </div>
-           </div>
-        </div>
-    </div>
-    <!-- End #languages -->
-
-    <div id="skills" >
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Angular</li>
-            <li>React</li>
-            <li>SASS</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>RabbitMQ</li>
-            <li>NodeJS</li>
-            <li>JQuery</li>
-            <li>Ionic</li>
-            <li>Firebase</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>Ruby on Rails</li>
-            <li>Django</li>
-            <li>SQL</li>
-            <li>Typescript</li>
-            <li>MongoDB</li>
-            <li>Redis</li>
-            <li>ES6</li>
-            <li>WebSockets</li>
-            <li>Google Cloud Platform</li>
-            <li>Amazon Web Services</li>
-            <li>Linux</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>InDesign</li>
-            <li>Excel</li>
-            <li>VBA</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="hobbies" class="background-alt">
-        <h2 class="heading">Hobbies & Interests</h2>
-        <div class="hobbies-icons">
-            <!-- Beer, Cinema, Drawing, Cooking, Music, Arts, Dance, Travelling, Books, Fitness -->
-            <div class="hobbie">
-                <img src="assets/airplane-flight.png" class="hobbie-icon">
-                <br>
-                <p>Travel</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/clapperboard.png" class="hobbie-icon">
-                <br>
-                <p>Cinema</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/pencil-edit-button.png" class="hobbie-icon">
-                <br>
-                <p>Drawing</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/chef.png" class="hobbie-icon">
-                <br>
-                <p>Cooking</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/piano-top-view.png" class="hobbie-icon">
-                <br>
-                <p>Music</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/painter-palette.png" class="hobbie-icon">
-                <br>
-                <p>Arts</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/open-book.png" class="hobbie-icon">
-                <br>
-                <p>Reading</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/beer.png" class="hobbie-icon">
-                <br>
-                <p>Beer</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/man-dancing-.png" class="hobbie-icon">
-                <br>
-                <p>Dancing</p>
-            </div>
-            <div class="hobbie">
-                <img src="assets/dumbbell.png" class="hobbie-icon">
-                <br>
-                <p>Fitness</p>
-            </div>
-        </div>
-    </div>
-    <!-- End #hobbies -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form action="" id="newContact">
-                <input id="contactEmail" type="email" name="_replyto" placeholder="Your email" required>
-                <textarea id="contactMessage" name="message" placeholder="Your message" required></textarea>
-                <button id="saveForm" name="saveForm" type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2017 DANILO ALEIXO
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/daniloaleixo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/danilo-aleixo/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/daniloaleixo" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/DANILO_ALEIXO" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    </div> 
 </body>
-
 </html>
