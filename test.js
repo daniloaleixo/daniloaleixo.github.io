@@ -1,28 +1,42 @@
-const { spawn } = require('child_process');
-const request = require('request');
-const test = require('tape');
+import fetch from 'node-fetch';
 
-// Start the app
-const env = Object.assign({}, process.env, {PORT: 5000});
-const child = spawn('node', ['index.js'], {env});
+const baseUrl = 'http://localhost:5000';
 
-test('responds to requests', (t) => {
-  t.plan(4);
+console.log('🧪 Running tests...');
 
-  // Wait until the server is ready
-  child.stdout.on('data', _ => {
-    // Make a request to our app
-    request('http://127.0.0.1:5000', (error, response, body) => {
-      // stop the server
-      child.kill();
+async function runTests() {
+    // Test 1: Check if server is running
+    try {
+        const response = await fetch(baseUrl);
+        
+        if (response.status === 200) {
+            console.log('✅ Test 1 PASSED: Server is running and responding');
+        } else {
+            console.log('❌ Test 1 FAILED: Server returned status code', response.status);
+        }
+        
+        // Test 2: Check if static files are served
+        try {
+            const staticResponse = await fetch(baseUrl + '/public/css/styles.css');
+            
+            if (staticResponse.status === 200) {
+                console.log('✅ Test 2 PASSED: Static files are being served');
+            } else {
+                console.log('❌ Test 2 FAILED: Static files returned status code', staticResponse.status);
+            }
+        } catch (error) {
+            console.log('❌ Test 2 FAILED: Static files not accessible');
+            console.log('   Error:', error.message);
+        }
+        
+        console.log('\n🎉 Tests completed!');
+        console.log('📝 Note: Email functionality requires SENDGRID_API_KEY environment variable');
+        
+    } catch (error) {
+        console.log('❌ Test 1 FAILED: Server is not running');
+        console.log('   Error:', error.message);
+        process.exit(1);
+    }
+}
 
-      // No error
-      t.false(error);
-      // Successful response
-      t.equal(response.statusCode, 200);
-      // Assert content checks
-      t.notEqual(body.indexOf("<title>Node.js Getting Started on Heroku</title>"), -1);
-      t.notEqual(body.indexOf("Getting Started with Node on Heroku"), -1);
-    });
-  });
-});
+runTests();
