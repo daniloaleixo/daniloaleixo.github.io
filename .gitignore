@@ -1,3 +1,5 @@
 node_modules/*
 run_server.sh
 sendgrid.env
+.claude/worktrees/
+.superpowers/
