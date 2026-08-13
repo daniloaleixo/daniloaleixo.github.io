@@ -36,6 +36,7 @@ in `index.html`, drop its banner image into `assets/images/`, and remove the old
 
 Built on the [vCard personal portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)
 template by [codewithsadee](https://github.com/codewithsadee), used under the MIT License.
+The upstream license notice is reproduced unchanged in [LICENSE-vcard](./LICENSE-vcard).
 
 ## License
 
