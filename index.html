@@ -1,771 +1,1201 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Danilo Aleixo">
-    <meta name="description" content="Danilo Aleixo - Personal website" />
-    <meta name="keywords" content="Danilo, Aleixo, Web, Developer, Portfolio">
-    <meta name="rating" content="general" />
-    <meta name="application-name" content="Danilo Aleixo">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="content-language" content="pt-br" />
-    <meta property="og:image" content="/assets/apple-icon-180x180.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:description" content="Danilo Aleixo - Personal website">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-    <!-- Imports -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/public/libs/font-awesome/css/font-awesome.min.css">
-    <link href="/public/css/animate.css" rel="stylesheet">
-    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/public/css/styles.css" rel="stylesheet">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/public/assets/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/public/assets/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/public/assets/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/public/assets/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/public/assets/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/public/assets/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/public/assets/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/public/assets/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/public/assets/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/public/assets/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/public/assets/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ff1940">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Fullscreen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-85636560-4', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <title>Danilo Aleixo</title>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="animated fadeInDown">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+
+          <p class="title">Web developer</p>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#awards">Awards</a>
-            </li>
-            <li>
-                <a href="#languages">Languages</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#hobbies">Hobbies</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sacramento, California, USA</address>
+            </div>
+
+          </li>
+
         </ul>
-    </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content" class="animated fadeIn">
-            <h1>Hello</h1>
-            <h2>I'm Danilo</h2>
-            <h3>I'm a Tech Lead</h3>
-            <a href="/public/assets/Resume.pdf" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+        <div class="separator"></div>
 
-        <div id="lead-overlay"></div>
+        <ul class="social-list">
 
-        <div id="lead-down" class="animated fadeInUp">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 heading-row" style="margin-bottom: -20px;">
-                    <h2 class="heading">About Me</h2>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-sm-12 social">
-                    <ul style="text-align: center;">
-                        <li>
-                            <a href="https://github.com/daniloaleixo" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/danilo-aleixo/" target="_blank"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@daniloaleixo94" target="_blank"><i class="fa fa-medium"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.goodreads.com/user/show/63427147-danilo-aleixo" target="_blank">
-                                <!-- <i class="fa fa-goodreads" aria-hidden="true"></i> -->
-                                <img src="/public/assets/iconfinder_goodreads_38663822.png" class="hobbie-icon" style="width: 20px;
-                                    height: 20px;
-                                    margin-top: -2px;">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/daniloaleixo" target="_blank"><i class="fa fa-facebook"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/DANILO_ALEIXO" target="_blank"><i class="fa fa-behance"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row flex-centralize-vertical">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-3">
-                    <div class="circle-wrapper">
-                        <img src="/public/assets/profile.png" alt="profile picture" responsive class="profile-img">
-                    </div>
-                </div>
-                <div class="col-md-9 col-xs-12">
-                    <p class="large-text">
-                        I'm Danilo Aleixo, a Tech Lead with over 10 years of experience leading cross-functional teams and building scalable, high-impact pricing platforms. With a strong foundation in Computer Science and more than a decade of coding experience, I thrive at the intersection of complex algorithmic logic and real-world business challenges.
-                        <br>At numa, I lead the development of pricing tools and systems that integrate advanced algorithms with robust cloud architecture — driving automation, precision, and performance at scale. My expertise spans full-stack development (Node.js, React), cloud-native applications (AWS, Kubernetes), and architectural design of distributed systems.
-                    </p>
-                    <p class="small-text">
-                        I'm Danilo Aleixo, a Tech Lead with over 10 years of experience leading cross-functional teams and building scalable, high-impact pricing platforms. With a strong foundation in Computer Science and more than a decade of coding experience, I thrive at the intersection of complex algorithmic logic and real-world business challenges.
-                        <br>At numa, I lead the development of pricing tools and systems that integrate advanced algorithms with robust cloud architecture — driving automation, precision, and performance at scale. My expertise spans full-stack development (Node.js, React), cloud-native applications (AWS, Kubernetes), and architectural design of distributed systems.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <!-- numa -->
-            <div data-date="March 2021 – Present">
-                <h3>numa (formerly COSI)</h3>
-                <h4>Lead Engineer</h4>
-                <p class="large-text">
-                    Leading the architecture and development of pricing tools and algorithm-driven systems across numa's tech stack.
-                    <br>Driving innovation through scalable microservices and cloud infrastructure (AWS, Kubernetes).
-                    <br>Working closely with product and data teams to integrate complex logic into customer-facing solutions.
-                    <br>Mentoring engineers and fostering a culture of technical excellence and ownership.
-                </p>
-                <p class="small-text">
-                    Leading the architecture and development of pricing tools and algorithm-driven systems across numa's tech stack.
-                    <br>Driving innovation through scalable microservices and cloud infrastructure (AWS, Kubernetes).
-                    <br>Working closely with product and data teams to integrate complex logic into customer-facing solutions.
-                    <br>Mentoring engineers and fostering a culture of technical excellence and ownership.
-                </p>
-            </div>
-
-            <!-- LTF -->
-            <div data-date="February 2018 – February 2021">
-                <h3>Learn To Fly</h3>
-                <h4>Software Architect</h4>
-                <p class="large-text">
-                    Was responsible for turning the idea into reality. I've architected and helped develop the whole
-                    system from the ground-up, managing a team of developers and designers, with a whole spectrum of
-                    services using Node, Angular, React, AWS and K8S.
-                </p>
-                <p class="small-text">
-                    Was responsible for turning the idea into reality. I've architected and helped develop the whole
-                    system from the ground-up, managing a team of developers and designers, with a whole spectrum of
-                    services using Node, Angular, React, AWS and K8S.
-                </p>
-            </div>
-
-            <!-- Colmeia -->
-            <div data-date="April 2017 – February 2018">
-                <h3>Colmeia</h3>
-                <h4>Tech Lead / Full-Stack Developer</h4>
-                <p class="large-text">
-                    Managed a small team of developers and designers, together we delivered the whole client app. The
-                    application was developed with Angular. I also helped architect and develop the backend application
-                    which works with NodeJS using GCP.
-                    <br>
-                    Duties:
-                    <br>
-                    - Architected a fully scalable client application, using design patterns and object oriented
-                    approaches.
-                    <br>
-                    - Helped architect a backend application based on scalable growth and performance.
-                </p>
-                <p class="small-text">
-                    Managed a small team of developers and designers, together we delivered the whole client app. The
-                    application was developed with Angular. I also helped architect and develop the backend application
-                    which works with NodeJS using GCP.
-                </p>
-            </div>
-
-            <!-- Educaqui -->
-            <div data-date="March 2016 – February 2017">
-                <h3>EduCaqui</h3>
-                <h4>Founder</h4>
-                <p class="large-text">
-                    Founded with some friends, it was a peer-to-peer tutor class platform. We went from ideation to
-                    implementation, received an angel investment but went bankrupt during the test phase.
-                </p>
-                <p class="small-text">
-                    Founded with some friends, it was a peer-to-peer tutor class platform. We went from ideation to
-                    implementation, received an angel investment but went bankrupt during the test phase.
-                </p>
-            </div>
-
-            <!-- ITAU -->
-            <div data-date="August 2014 – August 2016">
-                <h3>Itaú BBA</h3>
-                <h4>Intern</h4>
-                <p class="large-text">
-                    I've worked in software development and business analysis for some of the bank's foreign units as New York, Nassau/Cayman and London.
-                </p>
-                <p class="small-text">
-                    I've worked in software development and business analysis for some of the bank's foreign units as New York, Nassau/Cayman and London.
-                </p>
-            </div>
-
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-
-        <div class="education-block">
-            <h3>deeplearning.ai</h3>
-            <span class="education-date">Jul 2019 - Nov 2019</span>
-            <h4>Deep Learning Specialization</h4>
-            <p>
-                Deep Lerning Specialization covering a broad spectrum of algorithms and deep learning architectures
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of São Paulo</h3>
-            <span class="education-date">Jan 2012 - Dec 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Involved in a Scientific Initiation scholar of CNPq during one year that leads to the publication of
-                the research "Event Simulator for Spacial Systems"
-            </p>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/berlinkino.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Berlin Cinema Guide</h3>
-                        <p class="small-text">
-                            A comprehensive catalog of cinema schedules and listings for all cinemas in Berlin.
-                        </p>
-                        <p class="large-text">
-                            A comprehensive catalog of cinema schedules and listings for all cinemas in Berlin.
-                        </p>
-                        <ul>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>API Integration</li>
-                        </ul>
-                        <a href="https://berlinkino.aereozen.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/aereozen.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Aereozen</h3>
-                        <p class="small-text">
-                            Aereozen is a platform that allows you to find the best flights to your destination, using AI to find the best flights.
-                        </p>
-                        <p class="large-text">
-                            Aereozen is a platform that allows you to find the best flights to your destination, using AI to find the best flights.
-                        </p>
-                        <ul>
-                            <li>AI/ML</li>
-                            <li>Flight APIs</li>
-                            <li>Web Platform</li>
-                        </ul>
-                        <a href="https://ai.aereozen.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/paisesvisitados.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Paises Visitados</h3>
-                        <p class="small-text">
-                            Acompanhe todos os países que você já visitou nas suas viagens pelo mundo.
-                        </p>
-                        <p class="large-text">
-                            Acompanhe todos os países que você já visitou nas suas viagens pelo mundo.
-                        </p>
-                        <ul>
-                            <li>Travel Tracking</li>
-                            <li>Interactive Map</li>
-                            <li>Web App</li>
-                        </ul>
-                        <a href="https://paisesvisitados.aereozen.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/Untitled.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Neuro Evolution Market Trading</h3>
-                        <p class="small-text">
-                            Trading algo using neuro evolution and other architectures.
-                        </p>
-                        <p class="large-text">
-                            Trading algo using neuro evolution and other architectures.
-                        </p>
-                        <ul>
-                            <li>Python</li>
-                            <li>CNN</li>
-                            <li>LSTM</li>
-                            <li>neuro evolution</li>
-                        </ul>
-                        <a href="https://github.com/daniloaleixo/NeuroEvolutionMarketTrader">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="public/assets/finkids.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Financial Education App</h3>
-                        <p class="small-text">
-                            Help your kid learn how to save and manage money.
-                        </p>
-                        <p class="large-text">
-                            Help your kid learn how to save and manage money.
-                            Part of my undergraduate thesis where I study the best method to teach kids financial
-                            education.
-                        </p>
-                        <ul>
-                            <li>Angular</li>
-                            <li>Sass</li>
-                            <li>Firebase</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/financial-education-landing/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="public/assets/getup-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>I Dare You To Kill My App</h3>
-                        <p class="small-text">
-                            Kubernetes containers are really fast, but are you able to be faster?
-                        </p>
-                        <p class="large-text">
-                            Kubernetes containers are really fast, but are you able to be faster?
-                            <br>
-                            Little Project developed to generate leads to Getup Cloud company and in the future people
-                            who registrated in their plataform would receive this game as "loading screen". It was not
-                            published.
-                        </p>
-                        <ul>
-                            <li>React</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                        <a href="https://daretokill-79f8f.firebaseapp.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large" style="display: flex; justify-content: flex-start;">
-                    <div class="project-image">
-                        <img src="public/assets/calendar-component.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Calendar Component</h3>
-                        <p class="small-text">
-                            A contest to test Angular skills, the challenge here is to create a calendar.
-                        </p>
-                        <p class="large-text">
-                            A contest to test Angular skills, the challenge here is to create a calendar.
-                            The calendar show your actual events scheduled, let you schedule new events and provide a
-                            nice interface.
-                        </p>
-                        <ul>
-                            <li>Angular</li>
-                            <li>Sass</li>
-                            <li>Typecript</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/calendar-component/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="public/assets/olha-por-onde-anda-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Olha por Onde Anda</h3>
-                        <p class="small-text">
-                            Can you tidy up the tiles at São Paulo?
-                        </p>
-                        <p class="large-text">
-                            Can you tidy up the tiles at São Paulo?
-                            <br>
-                            Game developed in HTML canvas to study its structure and to have a game with São Paulo
-                            theme
-                        </p>
-
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>Canvas</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/jogo_olhe_por_onde_anda/app/index.html">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-            </div>
-
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="awards">
-        <h2 class="heading">Awards</h2>
-        <div class="container">
-            <div class="row">
-                <div class="award">
-                    <i class="fa fa-trophy fa-4x award-icon" aria-hidden="true"></i>
-                    <div class="award-info">
-                        <h3><em>2nd place</em> - Itau Innovation Challenge</h3>
-                        <p>
-                            According to Itau, Innovation Challenge is a entrepreneurship and innovation competition,
-                            In which, groups are formed by members of different work areas in order to come up with
-                            ideias or solutions for the bank, chasing the "Best Innovation Project" award.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="languages" class="background-alt">
-        <h2 class="heading">Languages</h2>
-        <div class="row evenly-dist-col">
-            <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter2"></div>
-                <div class="quarter quarter3"></div>
-                <div class="quarter quarter4"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>Portuguese</h3>
-                            <h4>Mother Language</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter2"></div>
-                <div class="quarter quarter3"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>English</h3>
-                            <h4>Advanced</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter3"></div>
-                <div class="quarter quarter4"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>Spanish</h3>
-                            <h4>Advanced</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #languages -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Angular</li>
-            <li>React</li>
-            <li>SASS</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>RabbitMQ</li>
-            <li>NodeJS</li>
-            <li>JQuery</li>
-            <li>Ionic</li>
-            <li>Firebase</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>Ruby on Rails</li>
-            <li>Django</li>
-            <li>SQL</li>
-            <li>Typescript</li>
-            <li>MongoDB</li>
-            <li>Redis</li>
-            <li>ES6</li>
-            <li>WebSockets</li>
-            <li>Google Cloud Platform</li>
-            <li>Amazon Web Services</li>
-            <li>Linux</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>InDesign</li>
-            <li>Excel</li>
-            <li>VBA</li>
         </ul>
-    </div>
-    <!-- End #skills -->
 
-    <div id="hobbies" class="background-alt">
-        <h2 class="heading">Hobbies & Interests</h2>
-        <div class="hobbies-icons">
-            <!-- Beer, Cinema, Drawing, Cooking, Music, Arts, Dance, Travelling, Books, Fitness -->
-            <div class="hobbie">
-                <img src="public/assets/airplane-flight.png" class="hobbie-icon">
-                <br>
-                <p>Travel</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/clapperboard.png" class="hobbie-icon">
-                <br>
-                <p>Cinema</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/pencil-edit-button.png" class="hobbie-icon">
-                <br>
-                <p>Drawing</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/chef.png" class="hobbie-icon">
-                <br>
-                <p>Cooking</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/piano-top-view.png" class="hobbie-icon">
-                <br>
-                <p>Music</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/painter-palette.png" class="hobbie-icon">
-                <br>
-                <p>Arts</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/open-book.png" class="hobbie-icon">
-                <br>
-                <p>Reading</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/beer.png" class="hobbie-icon">
-                <br>
-                <p>Beer</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/man-dancing-.png" class="hobbie-icon">
-                <br>
-                <p>Dancing</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/dumbbell.png" class="hobbie-icon">
-                <br>
-                <p>Fitness</p>
-            </div>
-        </div>
-    </div>
-    <!-- End #hobbies -->
+      </div>
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form action="" id="newContact">
-                <input id="contactEmail" type="email" name="_replyto" placeholder="Your email" required>
-                <textarea id="contactMessage" name="message" placeholder="Your message" required></textarea>
-                <button id="saveForm" name="saveForm" type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+    </aside>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2017 DANILO ALEIXO
-                    </p>
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/daniloaleixo" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/danilo-aleixo/" target="_blank"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@daniloaleixo94" target="_blank"><i class="fa fa-medium"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.goodreads.com/user/show/63427147-danilo-aleixo" target="_blank">
-                                <!-- <i class="fa fa-goodreads" aria-hidden="true"></i> -->
-                                <img src="public/assets/iconfinder_goodreads_38663822.png" class="hobbie-icon" style="width: 20px;
-                                    height: 20px;
-                                    margin-top: -2px;">
 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/daniloaleixo" target="_blank"><i class="fa fa-facebook"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/DANILO_ALEIXO" target="_blank"><i class="fa fa-behance"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
                 </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
