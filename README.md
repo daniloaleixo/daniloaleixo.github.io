@@ -21,6 +21,11 @@ python3 -m http.server 8000
 External runtime dependencies: [Ionicons](https://ionic.io/ionicons) and Google Fonts
 (Poppins), both via CDN. The contact form posts to [Formspree](https://formspree.io).
 
+> **Note:** the contact form is not live yet. `index.html` still points the form's
+> `action` at the placeholder `https://formspree.io/f/FORMSPREE_FORM_ID`. Replace
+> `FORMSPREE_FORM_ID` with a real Formspree form ID before deploying — until then,
+> submissions will 404.
+
 ## Updating the blog
 
 The Blog tab is hand-maintained. After publishing on
