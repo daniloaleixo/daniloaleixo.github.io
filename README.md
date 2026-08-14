@@ -1,127 +1,43 @@
-# Danilo Aleixo - Personal Portfolio
+# daniloaleixo.github.io
 
-A modern, responsive personal portfolio website built with Node.js, Express, and modern web technologies.
+Personal portfolio site for Danilo Aleixo — Tech Lead, Berlin.
 
-## 🚀 Features
+Live at [daniloaleixo.github.io](https://daniloaleixo.github.io).
 
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Modern Tech Stack**: Built with Node.js 18+, Express 4, and modern build tools
-- **Email Integration**: Contact form with SendGrid email service
-- **Performance Optimized**: Minified CSS/JS, optimized assets
-- **SEO Friendly**: Proper meta tags and structured data
+## Structure
 
-## 📋 Prerequisites
+Static site, no build step. Open `index.html` directly, or serve it:
 
-- Node.js 18.0.0 or higher
-- npm or yarn package manager
-
-## 🛠️ Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/daniloaleixo/daniloaleixo.github.io.git
-   cd daniloaleixo.github.io
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables** (optional, for email functionality)
-   ```bash
-   export SENDGRID_API_KEY=your_sendgrid_api_key_here
-   ```
-
-## 🏃‍♂️ Running the Application
-
-### Development Mode
 ```bash
-npm run dev
-```
-This starts the server with nodemon for automatic reloading on file changes.
-
-### Production Mode
-```bash
-npm start
+python3 -m http.server 8000
 ```
 
-### Build Assets
-```bash
-npm run build
-```
-This compiles and minifies CSS and JavaScript files.
+- `index.html` — the whole page: sidebar plus five tabs (About, Resume, Portfolio, Blog, Contact)
+- `assets/css/style.css` — stylesheet
+- `assets/js/script.js` — tab navigation, portfolio filtering, form validation
+- `assets/images/` — avatar, project and blog images, favicons
+- `assets/Resume.pdf` — downloadable CV
 
-### Watch Mode (for development)
-```bash
-npm run watch
-```
-This watches for changes in SCSS and JS files and automatically rebuilds them.
+External runtime dependencies: [Ionicons](https://ionic.io/ionicons) and Google Fonts
+(Poppins), both via CDN. The contact form posts to [Formspree](https://formspree.io).
 
-## 🧪 Testing
+> **Note:** the contact form is not live yet. `index.html` still points the form's
+> `action` at the placeholder `https://formspree.io/f/FORMSPREE_FORM_ID`. Replace
+> `FORMSPREE_FORM_ID` with a real Formspree form ID before deploying — until then,
+> submissions will 404.
 
-Run the test suite to verify everything is working:
-```bash
-npm test
-```
+## Updating the blog
 
-## 📁 Project Structure
+The Blog tab is hand-maintained. After publishing on
+[Medium](https://medium.com/@daniloaleixo94), add a card to `<ul class="blog-posts-list">`
+in `index.html`, drop its banner image into `assets/images/`, and remove the oldest card.
 
-```
-daniloaleixo.github.io/
-├── public/                 # Static assets
-│   ├── assets/            # Images, icons, PDFs
-│   ├── css/               # Compiled CSS
-│   ├── js/                # JavaScript files
-│   └── libs/              # Third-party libraries
-├── scss/                  # SCSS source files
-├── index.html             # Main HTML file
-├── index.js               # Express server
-├── gulpfile.js            # Build configuration
-└── package.json           # Dependencies and scripts
-```
+## Credits
 
-## 🔧 Configuration
+Built on the [vCard personal portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)
+template by [codewithsadee](https://github.com/codewithsadee), used under the MIT License.
+The upstream license notice is reproduced unchanged in [LICENSE-vcard](./LICENSE-vcard).
 
-### Port Configuration
-The server runs on port 5000 by default. You can change this by setting the `PORT` environment variable:
-```bash
-export PORT=3000
-npm start
-```
+## License
 
-### Email Configuration
-To enable the contact form email functionality, set your SendGrid API key:
-```bash
-export SENDGRID_API_KEY=your_api_key_here
-```
-
-## 🚀 Deployment
-
-### Heroku
-This project is configured for Heroku deployment. Simply push to your Heroku repository:
-```bash
-git push heroku main
-```
-
-### Other Platforms
-The project can be deployed to any Node.js hosting platform (Vercel, Netlify, Railway, etc.).
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Danilo Aleixo**
-- GitHub: [@daniloaleixo](https://github.com/daniloaleixo)
-- LinkedIn: [danilo-aleixo](https://www.linkedin.com/in/danilo-aleixo/)
-- Medium: [@daniloaleixo94](https://medium.com/@daniloaleixo94)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-
-
-
+MIT — see [LICENSE](./LICENSE).

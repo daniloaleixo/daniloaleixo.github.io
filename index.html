@@ -1,771 +1,1026 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Danilo Aleixo">
-    <meta name="description" content="Danilo Aleixo - Personal website" />
-    <meta name="keywords" content="Danilo, Aleixo, Web, Developer, Portfolio">
-    <meta name="rating" content="general" />
-    <meta name="application-name" content="Danilo Aleixo">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="content-language" content="pt-br" />
-    <meta property="og:image" content="/assets/apple-icon-180x180.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:description" content="Danilo Aleixo - Personal website">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danilo Aleixo — Tech Lead</title>
 
-    <!-- Imports -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/public/libs/font-awesome/css/font-awesome.min.css">
-    <link href="/public/css/animate.css" rel="stylesheet">
-    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/public/css/styles.css" rel="stylesheet">
+  <meta name="description" content="Danilo Aleixo — Tech Lead in Berlin with over 10 years building scalable pricing platforms, distributed systems, and cloud-native applications.">
+  <meta name="author" content="Danilo Aleixo">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/public/assets/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/public/assets/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/public/assets/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/public/assets/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/public/assets/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/public/assets/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/public/assets/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/public/assets/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/public/assets/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/public/assets/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/public/assets/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ff1940">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daniloaleixo.github.io/">
+  <meta property="og:title" content="Danilo Aleixo — Tech Lead">
+  <meta property="og:description" content="Tech Lead in Berlin with over 10 years building scalable pricing platforms, distributed systems, and cloud-native applications.">
+  <meta property="og:image" content="https://daniloaleixo.github.io/assets/images/my-avatar.png">
 
-    <!-- Fullscreen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Danilo Aleixo — Tech Lead">
+  <meta name="twitter:description" content="Tech Lead in Berlin with over 10 years building scalable pricing platforms, distributed systems, and cloud-native applications.">
+  <meta name="twitter:image" content="https://daniloaleixo.github.io/assets/images/my-avatar.png">
 
-    <!-- Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/android-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-icon-180x180.png">
 
-        ga('create', 'UA-85636560-4', 'auto');
-        ga('send', 'pageview');
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    </script>
-    <title>Danilo Aleixo</title>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="animated fadeInDown">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Danilo Aleixo" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Danilo Aleixo">Danilo Aleixo</h1>
+
+          <p class="title">Tech Lead</p>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#awards">Awards</a>
-            </li>
-            <li>
-                <a href="#languages">Languages</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#hobbies">Hobbies</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:danilo_aleixo@hotmail.com" class="contact-link">danilo_aleixo@hotmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Berlin, Germany</address>
+            </div>
+
+          </li>
+
         </ul>
-    </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content" class="animated fadeIn">
-            <h1>Hello</h1>
-            <h2>I'm Danilo</h2>
-            <h3>I'm a Tech Lead</h3>
-            <a href="/public/assets/Resume.pdf" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+        <div class="separator"></div>
 
-        <div id="lead-overlay"></div>
+        <ul class="social-list">
 
-        <div id="lead-down" class="animated fadeInUp">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+          <li class="social-item">
+            <a href="https://github.com/daniloaleixo" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 heading-row" style="margin-bottom: -20px;">
-                    <h2 class="heading">About Me</h2>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 40px;">
-                <div class="col-sm-12 social">
-                    <ul style="text-align: center;">
-                        <li>
-                            <a href="https://github.com/daniloaleixo" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/danilo-aleixo/" target="_blank"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@daniloaleixo94" target="_blank"><i class="fa fa-medium"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.goodreads.com/user/show/63427147-danilo-aleixo" target="_blank">
-                                <!-- <i class="fa fa-goodreads" aria-hidden="true"></i> -->
-                                <img src="/public/assets/iconfinder_goodreads_38663822.png" class="hobbie-icon" style="width: 20px;
-                                    height: 20px;
-                                    margin-top: -2px;">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/danilo-aleixo/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/daniloaleixo" target="_blank"><i class="fa fa-facebook"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/DANILO_ALEIXO" target="_blank"><i class="fa fa-behance"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row flex-centralize-vertical">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-3">
-                    <div class="circle-wrapper">
-                        <img src="/public/assets/profile.png" alt="profile picture" responsive class="profile-img">
-                    </div>
-                </div>
-                <div class="col-md-9 col-xs-12">
-                    <p class="large-text">
-                        I'm Danilo Aleixo, a Tech Lead with over 10 years of experience leading cross-functional teams and building scalable, high-impact pricing platforms. With a strong foundation in Computer Science and more than a decade of coding experience, I thrive at the intersection of complex algorithmic logic and real-world business challenges.
-                        <br>At numa, I lead the development of pricing tools and systems that integrate advanced algorithms with robust cloud architecture — driving automation, precision, and performance at scale. My expertise spans full-stack development (Node.js, React), cloud-native applications (AWS, Kubernetes), and architectural design of distributed systems.
-                    </p>
-                    <p class="small-text">
-                        I'm Danilo Aleixo, a Tech Lead with over 10 years of experience leading cross-functional teams and building scalable, high-impact pricing platforms. With a strong foundation in Computer Science and more than a decade of coding experience, I thrive at the intersection of complex algorithmic logic and real-world business challenges.
-                        <br>At numa, I lead the development of pricing tools and systems that integrate advanced algorithms with robust cloud architecture — driving automation, precision, and performance at scale. My expertise spans full-stack development (Node.js, React), cloud-native applications (AWS, Kubernetes), and architectural design of distributed systems.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
+          <li class="social-item">
+            <a href="https://medium.com/@daniloaleixo94" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <!-- numa -->
-            <div data-date="March 2021 – Present">
-                <h3>numa (formerly COSI)</h3>
-                <h4>Lead Engineer</h4>
-                <p class="large-text">
-                    Leading the architecture and development of pricing tools and algorithm-driven systems across numa's tech stack.
-                    <br>Driving innovation through scalable microservices and cloud infrastructure (AWS, Kubernetes).
-                    <br>Working closely with product and data teams to integrate complex logic into customer-facing solutions.
-                    <br>Mentoring engineers and fostering a culture of technical excellence and ownership.
-                </p>
-                <p class="small-text">
-                    Leading the architecture and development of pricing tools and algorithm-driven systems across numa's tech stack.
-                    <br>Driving innovation through scalable microservices and cloud infrastructure (AWS, Kubernetes).
-                    <br>Working closely with product and data teams to integrate complex logic into customer-facing solutions.
-                    <br>Mentoring engineers and fostering a culture of technical excellence and ownership.
-                </p>
-            </div>
+          <li class="social-item">
+            <a href="https://www.behance.net/DANILO_ALEIXO" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-behance"></ion-icon>
+            </a>
+          </li>
 
-            <!-- LTF -->
-            <div data-date="February 2018 – February 2021">
-                <h3>Learn To Fly</h3>
-                <h4>Software Architect</h4>
-                <p class="large-text">
-                    Was responsible for turning the idea into reality. I've architected and helped develop the whole
-                    system from the ground-up, managing a team of developers and designers, with a whole spectrum of
-                    services using Node, Angular, React, AWS and K8S.
-                </p>
-                <p class="small-text">
-                    Was responsible for turning the idea into reality. I've architected and helped develop the whole
-                    system from the ground-up, managing a team of developers and designers, with a whole spectrum of
-                    services using Node, Angular, React, AWS and K8S.
-                </p>
-            </div>
+          <li class="social-item">
+            <a href="https://www.facebook.com/daniloaleixo" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-            <!-- Colmeia -->
-            <div data-date="April 2017 – February 2018">
-                <h3>Colmeia</h3>
-                <h4>Tech Lead / Full-Stack Developer</h4>
-                <p class="large-text">
-                    Managed a small team of developers and designers, together we delivered the whole client app. The
-                    application was developed with Angular. I also helped architect and develop the backend application
-                    which works with NodeJS using GCP.
-                    <br>
-                    Duties:
-                    <br>
-                    - Architected a fully scalable client application, using design patterns and object oriented
-                    approaches.
-                    <br>
-                    - Helped architect a backend application based on scalable growth and performance.
-                </p>
-                <p class="small-text">
-                    Managed a small team of developers and designers, together we delivered the whole client app. The
-                    application was developed with Angular. I also helped architect and develop the backend application
-                    which works with NodeJS using GCP.
-                </p>
-            </div>
-
-            <!-- Educaqui -->
-            <div data-date="March 2016 – February 2017">
-                <h3>EduCaqui</h3>
-                <h4>Founder</h4>
-                <p class="large-text">
-                    Founded with some friends, it was a peer-to-peer tutor class platform. We went from ideation to
-                    implementation, received an angel investment but went bankrupt during the test phase.
-                </p>
-                <p class="small-text">
-                    Founded with some friends, it was a peer-to-peer tutor class platform. We went from ideation to
-                    implementation, received an angel investment but went bankrupt during the test phase.
-                </p>
-            </div>
-
-            <!-- ITAU -->
-            <div data-date="August 2014 – August 2016">
-                <h3>Itaú BBA</h3>
-                <h4>Intern</h4>
-                <p class="large-text">
-                    I've worked in software development and business analysis for some of the bank's foreign units as New York, Nassau/Cayman and London.
-                </p>
-                <p class="small-text">
-                    I've worked in software development and business analysis for some of the bank's foreign units as New York, Nassau/Cayman and London.
-                </p>
-            </div>
-
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-
-        <div class="education-block">
-            <h3>deeplearning.ai</h3>
-            <span class="education-date">Jul 2019 - Nov 2019</span>
-            <h4>Deep Learning Specialization</h4>
-            <p>
-                Deep Lerning Specialization covering a broad spectrum of algorithms and deep learning architectures
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of São Paulo</h3>
-            <span class="education-date">Jan 2012 - Dec 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Involved in a Scientific Initiation scholar of CNPq during one year that leads to the publication of
-                the research "Event Simulator for Spacial Systems"
-            </p>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/berlinkino.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Berlin Cinema Guide</h3>
-                        <p class="small-text">
-                            A comprehensive catalog of cinema schedules and listings for all cinemas in Berlin.
-                        </p>
-                        <p class="large-text">
-                            A comprehensive catalog of cinema schedules and listings for all cinemas in Berlin.
-                        </p>
-                        <ul>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>API Integration</li>
-                        </ul>
-                        <a href="https://berlinkino.aereozen.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/aereozen.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Aereozen</h3>
-                        <p class="small-text">
-                            Aereozen is a platform that allows you to find the best flights to your destination, using AI to find the best flights.
-                        </p>
-                        <p class="large-text">
-                            Aereozen is a platform that allows you to find the best flights to your destination, using AI to find the best flights.
-                        </p>
-                        <ul>
-                            <li>AI/ML</li>
-                            <li>Flight APIs</li>
-                            <li>Web Platform</li>
-                        </ul>
-                        <a href="https://ai.aereozen.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/paisesvisitados.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Paises Visitados</h3>
-                        <p class="small-text">
-                            Acompanhe todos os países que você já visitou nas suas viagens pelo mundo.
-                        </p>
-                        <p class="large-text">
-                            Acompanhe todos os países que você já visitou nas suas viagens pelo mundo.
-                        </p>
-                        <ul>
-                            <li>Travel Tracking</li>
-                            <li>Interactive Map</li>
-                            <li>Web App</li>
-                        </ul>
-                        <a href="https://paisesvisitados.aereozen.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="/public/assets/Untitled.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Neuro Evolution Market Trading</h3>
-                        <p class="small-text">
-                            Trading algo using neuro evolution and other architectures.
-                        </p>
-                        <p class="large-text">
-                            Trading algo using neuro evolution and other architectures.
-                        </p>
-                        <ul>
-                            <li>Python</li>
-                            <li>CNN</li>
-                            <li>LSTM</li>
-                            <li>neuro evolution</li>
-                        </ul>
-                        <a href="https://github.com/daniloaleixo/NeuroEvolutionMarketTrader">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="public/assets/finkids.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Financial Education App</h3>
-                        <p class="small-text">
-                            Help your kid learn how to save and manage money.
-                        </p>
-                        <p class="large-text">
-                            Help your kid learn how to save and manage money.
-                            Part of my undergraduate thesis where I study the best method to teach kids financial
-                            education.
-                        </p>
-                        <ul>
-                            <li>Angular</li>
-                            <li>Sass</li>
-                            <li>Firebase</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/financial-education-landing/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="public/assets/getup-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>I Dare You To Kill My App</h3>
-                        <p class="small-text">
-                            Kubernetes containers are really fast, but are you able to be faster?
-                        </p>
-                        <p class="large-text">
-                            Kubernetes containers are really fast, but are you able to be faster?
-                            <br>
-                            Little Project developed to generate leads to Getup Cloud company and in the future people
-                            who registrated in their plataform would receive this game as "loading screen". It was not
-                            published.
-                        </p>
-                        <ul>
-                            <li>React</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                        <a href="https://daretokill-79f8f.firebaseapp.com/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-            <div class="row">
-                <div class="project shadow-large" style="display: flex; justify-content: flex-start;">
-                    <div class="project-image">
-                        <img src="public/assets/calendar-component.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Calendar Component</h3>
-                        <p class="small-text">
-                            A contest to test Angular skills, the challenge here is to create a calendar.
-                        </p>
-                        <p class="large-text">
-                            A contest to test Angular skills, the challenge here is to create a calendar.
-                            The calendar show your actual events scheduled, let you schedule new events and provide a
-                            nice interface.
-                        </p>
-                        <ul>
-                            <li>Angular</li>
-                            <li>Sass</li>
-                            <li>Typecript</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/calendar-component/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-
-
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="public/assets/olha-por-onde-anda-project.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Olha por Onde Anda</h3>
-                        <p class="small-text">
-                            Can you tidy up the tiles at São Paulo?
-                        </p>
-                        <p class="large-text">
-                            Can you tidy up the tiles at São Paulo?
-                            <br>
-                            Game developed in HTML canvas to study its structure and to have a game with São Paulo
-                            theme
-                        </p>
-
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>Canvas</li>
-                        </ul>
-                        <a href="https://daniloaleixo.github.io/jogo_olhe_por_onde_anda/app/index.html">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-            </div>
-
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="awards">
-        <h2 class="heading">Awards</h2>
-        <div class="container">
-            <div class="row">
-                <div class="award">
-                    <i class="fa fa-trophy fa-4x award-icon" aria-hidden="true"></i>
-                    <div class="award-info">
-                        <h3><em>2nd place</em> - Itau Innovation Challenge</h3>
-                        <p>
-                            According to Itau, Innovation Challenge is a entrepreneurship and innovation competition,
-                            In which, groups are formed by members of different work areas in order to come up with
-                            ideias or solutions for the bank, chasing the "Best Innovation Project" award.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="languages" class="background-alt">
-        <h2 class="heading">Languages</h2>
-        <div class="row evenly-dist-col">
-            <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter2"></div>
-                <div class="quarter quarter3"></div>
-                <div class="quarter quarter4"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>Portuguese</h3>
-                            <h4>Mother Language</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter2"></div>
-                <div class="quarter quarter3"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>English</h3>
-                            <h4>Advanced</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="inner-circle">
-                <div class="quarter quarter1"></div>
-                <div class="quarter quarter3"></div>
-                <div class="quarter quarter4"></div>
-                <div class="cutout">
-                    <div class="inner-inner-circle">
-                        <div class="language-skill">
-                            <h3>Spanish</h3>
-                            <h4>Advanced</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #languages -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Angular</li>
-            <li>React</li>
-            <li>SASS</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>RabbitMQ</li>
-            <li>NodeJS</li>
-            <li>JQuery</li>
-            <li>Ionic</li>
-            <li>Firebase</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>Ruby on Rails</li>
-            <li>Django</li>
-            <li>SQL</li>
-            <li>Typescript</li>
-            <li>MongoDB</li>
-            <li>Redis</li>
-            <li>ES6</li>
-            <li>WebSockets</li>
-            <li>Google Cloud Platform</li>
-            <li>Amazon Web Services</li>
-            <li>Linux</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>InDesign</li>
-            <li>Excel</li>
-            <li>VBA</li>
         </ul>
-    </div>
-    <!-- End #skills -->
 
-    <div id="hobbies" class="background-alt">
-        <h2 class="heading">Hobbies & Interests</h2>
-        <div class="hobbies-icons">
-            <!-- Beer, Cinema, Drawing, Cooking, Music, Arts, Dance, Travelling, Books, Fitness -->
-            <div class="hobbie">
-                <img src="public/assets/airplane-flight.png" class="hobbie-icon">
-                <br>
-                <p>Travel</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/clapperboard.png" class="hobbie-icon">
-                <br>
-                <p>Cinema</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/pencil-edit-button.png" class="hobbie-icon">
-                <br>
-                <p>Drawing</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/chef.png" class="hobbie-icon">
-                <br>
-                <p>Cooking</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/piano-top-view.png" class="hobbie-icon">
-                <br>
-                <p>Music</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/painter-palette.png" class="hobbie-icon">
-                <br>
-                <p>Arts</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/open-book.png" class="hobbie-icon">
-                <br>
-                <p>Reading</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/beer.png" class="hobbie-icon">
-                <br>
-                <p>Beer</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/man-dancing-.png" class="hobbie-icon">
-                <br>
-                <p>Dancing</p>
-            </div>
-            <div class="hobbie">
-                <img src="public/assets/dumbbell.png" class="hobbie-icon">
-                <br>
-                <p>Fitness</p>
-            </div>
-        </div>
-    </div>
-    <!-- End #hobbies -->
+      </div>
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form action="" id="newContact">
-                <input id="contactEmail" type="email" name="_replyto" placeholder="Your email" required>
-                <textarea id="contactMessage" name="message" placeholder="Your message" required></textarea>
-                <button id="saveForm" name="saveForm" type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+    </aside>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2017 DANILO ALEIXO
-                    </p>
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Danilo Aleixo, a Tech Lead with over 10 years of experience leading cross-functional teams and
+            building scalable, high-impact pricing platforms. With a strong foundation in Computer Science and more
+            than a decade of coding experience, I thrive at the intersection of complex algorithmic logic and
+            real-world business challenges.
+          </p>
+
+          <p>
+            At numa, I lead the development of pricing tools and systems that integrate advanced algorithms with
+            robust cloud architecture — driving automation, precision, and performance at scale. My expertise spans
+            full-stack development (Node.js, React), cloud-native applications (AWS, Kubernetes), and architectural
+            design of distributed systems.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="pricetags-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Pricing Platforms &amp; Algorithms</h4>
+
+                <p class="service-item-text">
+                  Designing and shipping algorithm-driven pricing systems that turn complex business logic into
+                  automated, precise decisions at scale.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full-Stack Development</h4>
+
+                <p class="service-item-text">
+                  End-to-end product work across Node.js, TypeScript, React and Angular — from data model to the
+                  interface people actually use.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="cloud-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Architecture</h4>
+
+                <p class="service-item-text">
+                  Scalable microservices on AWS and Kubernetes, built for the failure modes distributed systems
+                  actually hit in production.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technical Leadership</h4>
+
+                <p class="service-item-text">
+                  Mentoring engineers, growing ownership across teams, and keeping technical decisions aligned with
+                  what the product actually needs.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+
+          <p class="service-item-text" style="margin-bottom: 20px;">
+            <a href="./assets/Resume.pdf" target="_blank" rel="noopener"
+               style="color: var(--orange-yellow-crayola);">Download as PDF</a>
+          </p>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">deeplearning.ai — Deep Learning Specialization</h4>
+
+              <span>Jul 2019 — Nov 2019</span>
+
+              <p class="timeline-text">
+                Specialization covering a broad spectrum of algorithms and deep learning architectures.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of São Paulo — BSc Computer Science</h4>
+
+              <span>Jan 2012 — Dec 2017</span>
+
+              <p class="timeline-text">
+                Held a CNPq Scientific Initiation scholarship for one year, leading to the publication of the
+                research "Event Simulator for Spacial Systems".
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lead Engineer — numa (formerly COSI)</h4>
+
+              <span>Mar 2021 — Present</span>
+
+              <p class="timeline-text">
+                Leading the architecture and development of pricing tools and algorithm-driven systems across numa's
+                tech stack. Driving innovation through scalable microservices and cloud infrastructure (AWS,
+                Kubernetes). Working closely with product and data teams to integrate complex logic into
+                customer-facing solutions, and mentoring engineers toward technical excellence and ownership.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Architect — Learn To Fly</h4>
+
+              <span>Feb 2018 — Feb 2021</span>
+
+              <p class="timeline-text">
+                Responsible for turning the idea into reality. Architected and helped develop the whole system from
+                the ground up, managing a team of developers and designers across a full spectrum of services using
+                Node, Angular, React, AWS and Kubernetes.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tech Lead / Full-Stack Developer — Colmeia</h4>
+
+              <span>Apr 2017 — Feb 2018</span>
+
+              <p class="timeline-text">
+                Managed a small team of developers and designers delivering the full client application in Angular.
+                Architected a fully scalable client application using design patterns and object-oriented approaches,
+                and helped architect a Node.js backend on GCP built for scalable growth and performance.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Founder — EduCaqui</h4>
+
+              <span>Mar 2016 — Feb 2017</span>
+
+              <p class="timeline-text">
+                Founded with friends as a peer-to-peer tutoring platform. Took it from ideation to implementation and
+                raised angel investment, but the company folded during the test phase.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intern — Itaú BBA</h4>
+
+              <span>Aug 2014 — Aug 2016</span>
+
+              <p class="timeline-text">
+                Worked in software development and business analysis for several of the bank's foreign units,
+                including New York, Nassau/Cayman and London.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Backend &amp; Distributed Systems</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Technical Leadership &amp; Mentoring</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud &amp; Infrastructure (AWS, Kubernetes)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Algorithms &amp; Pricing Systems</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Frontend (React, Angular, TypeScript)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web apps</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI &amp; ML</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web apps</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI &amp; ML</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Games</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web apps">
+              <a href="https://berlinkino.aereozen.com/" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/berlinkino.jpg" alt="Berlin Cinema Guide" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Berlin Cinema Guide</h3>
+
+                <p class="project-category">Web apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web apps">
+              <a href="https://paisesvisitados.aereozen.com/" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/paisesvisitados.jpg" alt="Paises Visitados" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Paises Visitados</h3>
+
+                <p class="project-category">Web apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web apps">
+              <a href="https://daniloaleixo.github.io/financial-education-landing/" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/finkids.png" alt="Financial Education App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Financial Education App</h3>
+
+                <p class="project-category">Web apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web apps">
+              <a href="https://daniloaleixo.github.io/calendar-component/" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/calendar-component.png" alt="Calendar Component" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calendar Component</h3>
+
+                <p class="project-category">Web apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai &amp; ml">
+              <a href="https://ai.aereozen.com/" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/aereozen.jpg" alt="Aereozen" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Aereozen</h3>
+
+                <p class="project-category">AI &amp; ML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai &amp; ml">
+              <a href="https://github.com/daniloaleixo/NeuroEvolutionMarketTrader" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/neuroevolution.png" alt="Neuro Evolution Market Trading" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Neuro Evolution Market Trading</h3>
+
+                <p class="project-category">AI &amp; ML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://daniloaleixo.github.io/jogo_olhe_por_onde_anda/app/index.html" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/olha-por-onde-anda-project.png" alt="Olha por Onde Anda" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Olha por Onde Anda</h3>
+
+                <p class="project-category">Games</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://daretokill-79f8f.firebaseapp.com/" target="_blank" rel="noopener">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/getup-project.png" alt="I Dare You To Kill My App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">I Dare You To Kill My App</h3>
+
+                <p class="project-category">Games</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@daniloaleixo94/jira-me-ensinou-a-tolerar-o-que-n%C3%A3o-devia-00dcc6c98356" target="_blank" rel="noopener">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-jira.png" alt="Jira me ensinou a tolerar o que não devia" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Engineering</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-05-18">May 18, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" lang="pt">Jira me ensinou a tolerar o que não devia</h3>
+
+                  <p class="blog-text" lang="pt">
+                    Passei anos trabalhando com Jira. Aprendi a conviver com ele da mesma forma que se aprende a
+                    conviver com um escritório barulhento.
+                  </p>
+
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/daniloaleixo" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/danilo-aleixo/" target="_blank"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@daniloaleixo94" target="_blank"><i class="fa fa-medium"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.goodreads.com/user/show/63427147-danilo-aleixo" target="_blank">
-                                <!-- <i class="fa fa-goodreads" aria-hidden="true"></i> -->
-                                <img src="public/assets/iconfinder_goodreads_38663822.png" class="hobbie-icon" style="width: 20px;
-                                    height: 20px;
-                                    margin-top: -2px;">
 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/daniloaleixo" target="_blank"><i class="fa fa-facebook"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/DANILO_ALEIXO" target="_blank"><i class="fa fa-behance"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@daniloaleixo94/por-que-usamos-claude-e-devin-ao-mesmo-tempo-e6fb5420d9cd" target="_blank" rel="noopener">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-claude-devin.jpg" alt="Por que usamos Claude e Devin ao mesmo tempo?" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-05-15">May 15, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" lang="pt">Por que usamos Claude e Devin ao mesmo tempo?</h3>
+
+                  <p class="blog-text" lang="pt">
+                    Há alguns meses, adotamos o Claude como nosso principal agente de código. Funciona bem: ele
+                    entende contexto e raciocina sobre arquitetura.
+                  </p>
+
                 </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@daniloaleixo94/todo-mundo-envelhece-berlin-n%C3%A3o-dad120827fba" target="_blank" rel="noopener">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-berlin.jpg" alt="Todo mundo envelhece, Berlin não" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Berlin</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-04-27">Apr 27, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" lang="pt">Todo mundo envelhece, Berlin não</h3>
+
+                  <p class="blog-text" lang="pt">
+                    Ontem eu vi ele de novo. Estava na plataforma do metrô, cantando para ninguém em particular — ou
+                    talvez para todo mundo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@daniloaleixo94/quando-a-ia-precisa-se-esconder-c9190fca25a1" target="_blank" rel="noopener">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-ia-esconder.jpg" alt="Quando a IA Precisa se Esconder" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-04-01">Apr 1, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" lang="pt">Quando a IA Precisa se Esconder</h3>
+
+                  <p class="blog-text" lang="pt">
+                    Há alguns dias, a Anthropic acidentalmente publicou no npm algo que não deveria estar lá: source
+                    maps do Claude Code.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@daniloaleixo94/prompt-bom-n%C3%A3o-escala-c10b8d73fdae" target="_blank" rel="noopener">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-prompt.jpg" alt="Prompt bom não escala" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-02-12">Feb 12, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" lang="pt">Prompt bom não escala</h3>
+
+                  <p class="blog-text" lang="pt">
+                    Outro dia assisti a um vídeo do John Lindquist — cofundador do egghead.io — onde ele mostrava
+                    como usa o Claude Code no dia a dia.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@daniloaleixo94/i-built-a-website-because-i-was-annoyed-76e08653c4f5" target="_blank" rel="noopener">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-cinema.jpg" alt="I built a website because I was annoyed" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Side projects</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-02-09">Feb 9, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">I built a website because I was annoyed</h3>
+
+                  <p class="blog-text">
+                    I love going to the cinema in Berlin. The city has an incredible scene — small independent
+                    theaters showing films in original language.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://maps.google.com/maps?q=Berlin,Germany&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              width="400" height="300" loading="lazy" title="Berlin, Germany"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <!-- TODO: replace FORMSPREE_FORM_ID with the real Formspree form ID before deploying -->
+          <form action="https://formspree.io/f/FORMSPREE_FORM_ID" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
