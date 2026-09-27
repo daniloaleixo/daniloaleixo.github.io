@@ -1883,3 +1883,41 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/**
+ * resume: role bullets and skill tags
+ */
+
+.timeline-bullets {
+  margin-top: 8px;
+  padding-left: 18px;
+  list-style: disc;
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.timeline-bullets li::marker { color: var(--orange-yellow-crayola); }
+
+@media (min-width: 1250px) {
+  .timeline-bullets { max-width: 700px; }
+}
+
+.skills-group:not(:last-child) { margin-bottom: 20px; }
+
+.skills-group .h5 { margin-bottom: 10px; }
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  padding: 4px 12px;
+  border: 1px solid var(--jet);
+  border-radius: 8px;
+}
