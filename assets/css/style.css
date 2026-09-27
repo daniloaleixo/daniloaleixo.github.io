@@ -1897,6 +1897,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   line-height: 1.6;
 }
 
+.timeline-bullets li { list-style: disc; }
+
 .timeline-bullets li::marker { color: var(--orange-yellow-crayola); }
 
 @media (min-width: 1250px) {
